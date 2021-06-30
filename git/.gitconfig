@@ -26,6 +26,9 @@
 	editor = code --wait
 	excludesfile = ~/.gitignore_global
 
+[init]
+	defaultBranch = main
+
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true

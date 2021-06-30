@@ -1,0 +1,36 @@
+[credential]
+	helper = osxkeychain
+
+[user]
+	name = name
+	email = email
+	signingkey = key
+
+[gpg]
+	program = gpg2
+
+[push]
+	default = simple
+
+[pull]
+	ff = only
+	rebase = merges
+
+[commit]
+	gpgsign = true
+
+[merge]
+	ff = only
+
+[core]
+	editor = code --wait
+	excludesfile = ~/.gitignore_global
+
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+
+[includeIf "gitdir:~/dev/"]
+	path = .gitconfig_work

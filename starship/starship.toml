@@ -1,0 +1,152 @@
+# ~/.config/starship.toml
+
+# Use the default format
+format = "$all"
+
+# Wait 20 milliseconds for starship to check files under the current directory.
+scan_timeout = 30
+
+# Timeout for commands executed by starship (in milliseconds).
+command_timeout = 500
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+[aws]
+symbol = "  "
+disabled = true
+
+[battery]
+disabled = true
+
+[character]
+format = '$symbol[:\)](bold green) '
+success_symbol = "[➜](bold green) "
+error_symbol = "[✗](bold red) "
+vicmd_symbol = "[V](bold green) "
+
+[cmd_duration]
+min_time = 5
+format = "🕙 [$duration](bold yellow)"
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[directory]
+truncation_length = 5
+truncate_to_repo = false
+read_only = " "
+#truncation_symbol = "…/"
+home_symbol = "~"
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[gcloud]
+disabled = true
+
+[git_branch]
+format = "on [$symbol$branch]($style) "
+symbol = " "
+
+[git_commit]
+commit_hash_length = 4
+tag_disabled = false
+tag_symbol = " 🏷 "
+disabled = true
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+cherry_pick = "[🍒 PICKING](bold red)"
+
+[git_status]
+conflicted = "🏳"
+ahead = "🏎💨"
+behind = "⇣"
+diverged = "⇕"
+untracked = "?"
+stashed = "📦"
+modified = "📝"
+staged = '[++\($count\)](green)'
+renamed = "»"
+deleted = "🗑"
+
+[golang]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[kubernetes]
+disabled = false
+
+[memory_usage]
+threshold = 20
+format = "$symbol[${ram}( | ${swap})]($style) "
+symbol = " "
+style = "bold dimmed white"
+disabled = false
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[package]
+symbol = " "
+disabled = true
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[shell]
+disabled = false
+
+[shlvl]
+symbol = " "
+
+[status]
+format = '[\[$symbol $common_meaning$signal_name$maybe_int\]]($style) '
+symbol = "🔴"
+map_symbol = true
+disabled = false
+
+[swift]
+symbol = "ﯣ "
+
+[time]
+format = '[\[ $time \]]($style) '
+use_12hr = true
+disabled = false

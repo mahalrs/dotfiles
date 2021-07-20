@@ -1,4 +1,4 @@
 [user]
-	name = name
-	email = email
+    name = name
+    email = email
     signingkey = key

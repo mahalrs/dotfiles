@@ -1,39 +1,39 @@
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain
 
 [user]
-	name = name
-	email = email
-	signingkey = key
+    name = name
+    email = email
+    signingkey = key
 
 [gpg]
-	program = gpg2
+    program = gpg2
 
 [push]
-	default = simple
+    default = simple
 
 [pull]
-	ff = only
-	rebase = merges
+    ff = only
+    rebase = merges
 
 [commit]
-	gpgsign = true
+    gpgsign = true
 
 [merge]
-	ff = only
+    ff = only
 
 [core]
-	editor = code --wait
-	excludesfile = ~/.gitignore_global
+    editor = code --wait
+    excludesfile = ~/.gitignore_global
 
 [init]
-	defaultBranch = main
+    defaultBranch = main
 
 [filter "lfs"]
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
 
 [includeIf "gitdir:~/dev/"]
-	path = .gitconfig_work
+    path = .gitconfig_work

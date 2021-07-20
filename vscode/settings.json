@@ -55,12 +55,12 @@
     "files.autoSave": "off",
     "files.enableTrash": true,
     "files.exclude": {
-		"**/.git": true,
-		"**/.svn": true,
-		"**/.hg": true,
-		"**/CVS": true,
-		"**/.DS_Store": true
-	},
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    },
 
     "markdown.styles": [
         "https://mahalrs.github.io/dotfiles/vscode/markdown-preview-github.css"

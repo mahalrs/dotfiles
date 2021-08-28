@@ -1,0 +1,59 @@
+#-------------------------------------------------------------------------------
+# ENVIRONMENT SETUP
+#-------------------------------------------------------------------------------
+
+# Set default editor
+export EDITOR=code
+
+# Go
+export GOPATH=${HOME}/go
+export GOROOT=/usr/local/go
+
+if [[ ":${PATH}:" != *":${GOPATH}/bin:"* ]]; then
+    export PATH=${PATH}:${GOPATH}/bin
+fi
+
+if [[ ":${PATH}:" != *":${GOROOT}/bin:"* ]]; then
+    export PATH=${PATH}:${GOROOT}/bin
+fi
+
+# Python3
+# alias python=python3
+
+#-------------------------------------------------------------------------------
+# MAKE TERMINAL BETTER
+#-------------------------------------------------------------------------------
+
+# Customize prompt
+PROMPT='
+%B%F{cyan}%3~%f%b %B%(?.%F{green}➜.%F{red}[🔴 %?] ✗)%f%b '
+# eval "$(starship init zsh)"
+
+# Save command history
+HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+HISTSIZE=2000
+SAVEHIST=1000
+
+setopt EXTENDED_HISTORY
+setopt SHARE_HISTORY
+setopt APPEND_HISTORY
+setopt INC_APPEND_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_REDUCE_BLANKS
+
+# Set bash like globbing behavior
+setopt GLOB_COMPLETE
+
+alias c='clear'
+alias rm='rm -rfv'
+alias mv='mv -iv'
+alias cp='cp -iv'
+
+# cp with progress bar
+# alias cpv='rsync -ah --info=progress2'
+
+alias mkdir='mkdir -pv'
+alias ll='ls -FGlAhp'
+
+# List the file structure of the current directory
+#alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"

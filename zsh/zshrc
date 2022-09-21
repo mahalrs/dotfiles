@@ -5,29 +5,31 @@
 # Set default editor
 export EDITOR=code
 
+export GPG_TTY=$(tty)
+
 # Go
 export GOPATH=${HOME}/go
-export GOROOT=/usr/local/go
+# export GOROOT=/usr/local/go
 
 if [[ ":${PATH}:" != *":${GOPATH}/bin:"* ]]; then
     export PATH=${PATH}:${GOPATH}/bin
 fi
 
-if [[ ":${PATH}:" != *":${GOROOT}/bin:"* ]]; then
-    export PATH=${PATH}:${GOROOT}/bin
-fi
+# if [[ ":${PATH}:" != *":${GOROOT}/bin:"* ]]; then
+#     export PATH=${PATH}:${GOROOT}/bin
+# fi
 
 # Python3
-# alias python=python3
+alias python=python3
 
 #-------------------------------------------------------------------------------
 # MAKE TERMINAL BETTER
 #-------------------------------------------------------------------------------
 
 # Customize prompt
-PROMPT='
-%B%F{cyan}%3~%f%b %B%(?.%F{green}➜.%F{red}[🔴 %?] ✗)%f%b '
-# eval "$(starship init zsh)"
+# PROMPT='
+# %B%F{cyan}%3~%f%b %B%(?.%F{green}➜.%F{red}[🔴 %?] ✗)%f%b '
+eval "$(starship init zsh)"
 
 # Save command history
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history

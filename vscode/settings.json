@@ -12,7 +12,7 @@
         100
     ],
     "editor.smoothScrolling": true,
-    //"editor.suggestSelection": "first",
+    // "editor.suggestSelection": "first",
     "editor.tabCompletion": "off",
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
@@ -22,9 +22,9 @@
     "editor.wordWrapColumn": 100,
 
     "workbench.colorCustomizations": {
-        //"terminal.background":"#1D2021",
-        //"terminal.background":"#282c34",
-        //"terminal.foreground":"#abb2bf",
+        // "terminal.background":"#1D2021",
+        // "terminal.background":"#282c34",
+        // "terminal.foreground":"#abb2bf",
         "terminalCursor.background":"#f8f8f0",
         "terminalCursor.foreground":"#f8f8f0",
         "terminal.selectionBackground": "#3E4451",
@@ -65,7 +65,7 @@
     "terminal.integrated.confirmOnExit": "always",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "block",
-    "terminal.integrated.fontFamily": "Menlo, Monaco",
+    "terminal.integrated.fontFamily": "'FiraCode Nerd Font', Menlo, Monaco",
     "terminal.integrated.fontSize": 13,
 
     "go.lintOnSave": "package",

@@ -10,6 +10,7 @@ $git_commit\
 $git_state\
 $git_status\
 $golang\
+$conda\
 $memory_usage\
 $cmd_duration\
 $line_break\
@@ -35,6 +36,12 @@ vicmd_symbol = "[V](bold green) "
 [cmd_duration]
 min_time = 10
 format = "🕙 [$duration](bold yellow)"
+
+[conda]
+format = "[$symbol$environment]($style) "
+symbol = " "
+ignore_base = false
+disabled = false
 
 [directory]
 truncation_length = 5
@@ -95,10 +102,6 @@ disabled = true
 disabled = true
 
 [cmake]
-disabled = true
-
-[conda]
-symbol = " "
 disabled = true
 
 [crystal]

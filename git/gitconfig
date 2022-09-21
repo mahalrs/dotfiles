@@ -7,7 +7,7 @@
     signingkey = key
 
 [gpg]
-    program = gpg2
+    program = gpg
 
 [push]
     default = simple
@@ -17,6 +17,9 @@
     rebase = merges
 
 [commit]
+    gpgsign = true
+
+[tag]
     gpgsign = true
 
 [merge]

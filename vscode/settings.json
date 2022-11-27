@@ -75,19 +75,21 @@
 
     "[python]": {
         "editor.defaultFormatter": "ms-python.python",
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": true
     },
     "python.formatting.provider": "yapf",
     "python.formatting.yapfArgs": [
         "--style",
-        "{based_on_style: yapf, column_limit: 80}"
+        "{based_on_style: google, column_limit: 80}"
     ],
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
     "python.linting.lintOnSave": true,
     "pylint.args": [
         "--rcfile",
-        "${HOME}/.pylintrc"
+        "${HOME}/.pylintrc",
+        "--indent-string",
+        "\"    \""
     ],
     "python.languageServer": "Pylance",
 

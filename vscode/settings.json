@@ -47,7 +47,7 @@
     },
     "workbench.colorTheme": "Default Dark+",
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter-notebook"
     },
     "workbench.startupEditor": "newUntitledFile",
 
@@ -72,6 +72,24 @@
     "go.lintTool": "staticcheck",
     "go.toolsManagement.autoUpdate": true,
     "go.useLanguageServer": true,
+
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python",
+        "editor.formatOnSave": true,
+    },
+    "python.formatting.provider": "yapf",
+    "python.formatting.yapfArgs": [
+        "--style",
+        "{based_on_style: yapf, column_limit: 80}"
+    ],
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.lintOnSave": true,
+    "pylint.args": [
+        "--rcfile",
+        "${HOME}/.pylintrc"
+    ],
+    "python.languageServer": "Pylance",
 
     // "prettier.tabWidth": 4,
     // "prettier.useTabs": false,

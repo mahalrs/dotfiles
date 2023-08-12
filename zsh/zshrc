@@ -27,9 +27,8 @@ alias python=python3
 #-------------------------------------------------------------------------------
 
 # Customize prompt
-# PROMPT='
-# %B%F{cyan}%3~%f%b %B%(?.%F{green}➜.%F{red}[🔴 %?] ✗)%f%b '
-eval "$(starship init zsh)"
+PROMPT='
+%B%F{cyan}%3~%f%b %B%(?.%F{green}➜.%F{red}[🔴 %?] ✗)%f%b '
 
 # Save command history
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history

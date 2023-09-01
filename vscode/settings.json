@@ -80,17 +80,10 @@
   "go.useLanguageServer": true,
 
   "[python]": {
-    "editor.defaultFormatter": "ms-python.python",
+    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true
   },
-  "python.formatting.provider": "yapf",
-  "python.formatting.yapfArgs": [
-    "--style",
-    "{based_on_style: google, column_limit: 80}"
-  ],
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
-  "python.linting.lintOnSave": true,
+  "black-formatter.args": ["--line-length", "80"],
   "pylint.args": [
     "--rcfile",
     "${HOME}/.pylintrc",

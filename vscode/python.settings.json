@@ -3,14 +3,15 @@
   "editor.insertSpaces": true,
   "editor.detectIndentation": true,
   "editor.trimAutoWhitespace": true,
-  "editor.defaultFormatter": "ms-python.python",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "python.formatting.provider": "yapf",
-  "python.formatting.yapfArgs": [],
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
-  "python.linting.lintOnSave": true,
+
   "python.languageServer": "Pylance",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "black-formatter.args": ["--line-length", "80"],
   "pylint.args": [
     "--rcfile",
     "${workspaceFolder}/.pylintrc",

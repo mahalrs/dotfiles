@@ -81,9 +81,13 @@
 
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
   },
   "black-formatter.args": ["--line-length", "80"],
+  "isort.args": ["--profile", "black"],
   "pylint.args": [
     "--rcfile",
     "${HOME}/.pylintrc",

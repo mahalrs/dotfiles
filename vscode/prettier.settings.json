@@ -11,6 +11,7 @@
     "CODEOWNERS": "plaintext",
     "CONTRIBUTORS": "plaintext",
     ".dockerignore": "ignore",
+    ".helmignore": "ignore",
     "*.mdx": "markdown"
   },
 

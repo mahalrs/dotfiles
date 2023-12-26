@@ -9,9 +9,13 @@
   "python.languageServer": "Pylance",
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
   },
   "black-formatter.args": ["--line-length", "80"],
+  "isort.args": ["--profile", "black"],
   "pylint.args": [
     "--rcfile",
     "${workspaceFolder}/.pylintrc",
@@ -19,11 +23,15 @@
     "\"    \""
   ],
 
+  "notebook.formatOnSave.enabled": true,
+  "notebook.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+
   "files.associations": {
     "AUTHORS": "plaintext",
     "CODEOWNERS": "plaintext",
-    "CONTRIBUTORS": "plaintext",
-    ".dockerignore": "ignore"
+    "CONTRIBUTORS": "plaintext"
   },
 
   "[markdown]": {
